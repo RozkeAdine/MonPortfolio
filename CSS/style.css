@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "dancing";
+  src: url(/font/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "jaquesshadow";
+  src: url(/font/JacquesFrancoisShadow-Regular.ttf);
+}
+@font-face {
+  font-family: "blaka";
+  src: url(/font/BlakaHollow-Regular.ttf);
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*mobile*/
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-family: "jaquesshadow";
+    font-size: 100%;
+  }
+  body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    background: url(/assets/telephone.webp) no-repeat center fixed;
+    -webkit-background-size: cover;
+  }
+  #burger {
+    display: none;
+  }
+  #burger + nav {
+    display: none;
+  }
+  #burger:checked + nav {
+    display: block;
+  }
+  li{
+    padding: 15%;
+  }
+  .nav_menu {
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 150vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+/*tablette*/
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  li {
+    display: -ms-grid;
+    display: grid;
+    padding: 15%;
+  }
+  h1 {
+    font-family: "blaka";
+  }
+  body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    background: url(/assets/tablette.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+  }
+  label {
+    display: none;
+  }
+  #burger {
+    display: none;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*desktop*/
+@media screen and (min-width: 900px) {
+  header h1 {
+    font-family: "dancing";
+    color: black;
+  }
+  ul .menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav_menu {
+    padding: 5%;
+    width: 90%;
+    height: 50px;
+    display: inline-block;
+  }
+  .menu li {
+    width: 20%;
+    display:inline-flex;
+    margin: 25px;
+    justify-content: center;
+    /* alligne les box à l'horizontal*/
+  }
+  /*recuperé sur pierre-giraud.com donc a tester pour portfolio definitif*/
+  .sous {
+    display: none;
+    -webkit-box-shadow: 0px 1px 2px #ccc;
+            box-shadow: 0px 1px 2px #ccc;
+    background-color: rgba(255, 255, 255, 0.253);
+  }
+  nav > ul li:hover .sous {
+    display: block;
+  }
+  body {
+    font-family: sans-serif, Impact, Haettenschweiler, "Arial Narrow Bold";
+    font-size: xx-large;
+    /*-ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;*/
+    background: url(/assets/road960_720.webp) no-repeat center fixed;
+    -webkit-background-size: cover;
+  }
+  label {
+    display: none;
+  }
+  #burger {
+    display: none;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+/*{
+  height: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
+}*/
+
+#entete_logo {
+  max-height: 190px;
+  max-width: 190px;
+  padding: 50px;
+  margin: 0px;
+  border-radius: 50%;
+}
+
+img {
+  width: 60%;
+  height: auto;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: black;
+  /* voir position: sticky*/
+}
+
+#Projet_global,
+#Articles_global {
+  width: 100%;
+  display: inline-flex;
+  
+}
+.nav_menu li:hover {
+  border: 5px solid goldenrod;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+ul ul li:hover img {
+  margin: 5px;
+}
+
+.hover-effect:hover {
+  opacity: 50%;
+  border-radius: 3px;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+h3 img:first-child {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.titre1 {
+  font-size: 75px;
+  width: 100%;
+}
+
+/*test animation fondu provenance openclassroom div en fondu*/ 
+#entete_logo {
+    height:0;
+    width: 100px;
+    -webkit-animation: anim 1s linear forwards 2s;
+    animation: anim 1s linear forwards 2s;
+}
+@-webkit-keyframes anim {
+    0%  {height: 0;}
+    100% {height: 100px}
+}
+@keyframes anim {
+    0%  {height: 0;}
+    100% {height: 100px}
+}
+/*test animation fondu provenance openclassroom div en fondu*/ 
+
+section h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+ center;
+  font-size: 175px;
+}
+
+p {
+  color: aliceblue;
+}
+
+ul {
+  /*text-align: center ; /* pose le menu au centre de la page*/
+  width: auto;
+  font-size: 75px;
+}
+
+/*-------------------------------------------------------------------------*/
+input {
+  margin-left: 25px;
+  width: 95%;
+  height: auto;
+  text-align: center;
+  font-size: 35px;
+}
+
+textarea {
+  margin-left: 25px;
+  width: 95%;
+  height: auto;
+  text-align: center;
+  font-size: 45%;
+  -webkit-box-shadow: #ccc;
+          box-shadow: #ccc;
+}
+
+button {
+  margin-left: 25px;
+  width: 95%;
+  height: auto;
+  color: #f7f1e9;
+  font-size: 45%;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
+footer div{
+  display:inline-flex;
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  }
+#icon_net
+{
+  display:;
+}
+.icon_footer 
+{
+
+    height: 0px;
+    width: 100px;
+    -webkit-animation: anim 1s forwards 2s;
+    animation: anim 2s forwards 3s;
+}
+@-webkit-keyframes anim {
+    0%  {height: 0;}
+    100% {height: 100px}
+}
+@keyframes anim {
+    0%  {height: 0;}
+    100% {height: 100px}
+}
