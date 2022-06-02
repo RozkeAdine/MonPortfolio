@@ -11,41 +11,64 @@
   font-family: "blaka";
   src: url(/font/BlakaHollow-Regular.ttf);
 }
+@font-face {
+  font-family: "lobster";
+  src: url(/font/Lobster-Regular.ttf);
+}
+
 
 /*---------------------------------------------------------------------------------------------------*/
 /*mobile*/
-@media screen and (min-width: 200px) and (max-width: 599px) {
-  img {
+@media screen and (min-width: 200px) and (max-width: 599px) 
+{
+  img
+  {
     width: 100%;
     height: auto;
   }
-  h1 {
-    font-family: "jaquesshadow";
-    font-size: 100%;
+  #Projet_global,
+#Articles_global
+  {
+  margin: 0% 10%;
   }
-  body {
+  h1
+  {
+    font-family: "jaquesshadow";
+    color: black;
+    text-shadow: 1px 1px 2px rgb(238, 230, 230), 0 0 1em blue, 0 0 0.2em blue;
+  }
+  body
+  {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
-    background: url(/assets/telephone.webp) no-repeat center fixed;
+    background: url(/assets/celestial.gif) no-repeat center fixed;
     -webkit-background-size: cover;
   }
-  #burger {
+  #burger
+  {
     display: none;
   }
-  #burger + nav {
+  #burger + nav
+  {
     display: none;
   }
-  #burger:checked + nav {
+  #burger:checked + nav
+  {
     display: block;
   }
-  li{
+  li
+  {
+    display: -ms-grid;
+    display: grid;
     padding: 15%;
   }
-  .nav_menu {
+  .nav_menu
+  {
+    margin: 0% 30%;
     top: 0;
     right: 0;
     width: 300px;
-    height: 150vh;
+    height: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -54,96 +77,93 @@
 
 /*------------------------------------------------------------------------------------------------------*/
 /*tablette*/
-@media screen and (min-width: 600px) and (max-width: 899px) {
-  li {
+@media screen and (min-width: 600px) and (max-width: 899px) 
+{
+  li
+  {
     display: -ms-grid;
     display: grid;
     padding: 15%;
+    margin: 10% 20%;
   }
-  h1 {
+  h1
+  {
     font-family: "blaka";
+    text-shadow: 1px 1px 2px rgb(238, 230, 230), 0 0 1em blue, 0 0 0.2em blue;
+
   }
-  body {
+  body
+  {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
     background: url(/assets/tablette.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
   }
-  label {
+  label
+  {
     display: none;
   }
-  #burger {
+  #burger
+  {
     display: none;
   }
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*desktop*/
-@media screen and (min-width: 900px) {
-  header h1 {
+@media screen and (min-width: 900px)
+{
+  header h1
+  {
     font-family: "dancing";
     color: black;
+    text-shadow: 1px 1px 2px rgb(238, 230, 230), 0 0 1em blue, 0 0 0.2em blue;
   }
-  ul .menu {
+#Projet_global,
+#Articles_global
+  {
+  width: 80%;
+  display:flex;
+  }
+  ul .menu
+  {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .nav_menu {
+  .nav_menu
+  {
     padding: 5%;
     width: 90%;
-    height: 50px;
     display: inline-block;
   }
-  .menu li {
+  .menu li
+  {
     width: 20%;
     display:inline-flex;
     margin: 25px;
     justify-content: center;
-    /* alligne les box à l'horizontal*/
   }
-  /*recuperé sur pierre-giraud.com donc a tester pour portfolio definitif*/
-  .sous {
-    display: none;
-    -webkit-box-shadow: 0px 1px 2px #ccc;
-            box-shadow: 0px 1px 2px #ccc;
-    background-color: rgba(255, 255, 255, 0.253);
-  }
-  nav > ul li:hover .sous {
-    display: block;
-  }
-  body {
+  body
+  {
     font-family: sans-serif, Impact, Haettenschweiler, "Arial Narrow Bold";
     font-size: xx-large;
-    /*-ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;*/
     background: url(/assets/road960_720.webp) no-repeat center fixed;
     -webkit-background-size: cover;
   }
-  label {
+  label
+  {
     display: none;
   }
-  #burger {
+  #burger
+  {
     display: none;
   }
 }
-
 /*------------------------------------------------------------------------------------------------*/
-
-
-/*{
-  height: 600px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0px 20px;
-}*/
-
-#entete_logo {
+#entete_logo
+{
   max-height: 190px;
   max-width: 190px;
   padding: 50px;
@@ -151,137 +171,184 @@
   border-radius: 50%;
 }
 
-img {
-  width: 60%;
+img
+{
+  width: 30%;
   height: auto;
-
 }
-
-* {
+*
+{
   padding: 0;
   margin: 0;
   color: black;
   /* voir position: sticky*/
 }
-
 #Projet_global,
-#Articles_global {
-  width: 100%;
-  display: inline-flex;
-  
+#Articles_global, #Etudes_global
+  {
+  margin: 0% 10%;
+  }
+label img
+{
+width: 30%;
+margin: 0% 35% 0% ;
 }
-.nav_menu li:hover {
+article
+{
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+}
+.nav_menu li:hover
+{
   border: 5px solid goldenrod;
   overflow: hidden;
   transition: 0.7s;
 }
-
-ul ul li:hover img {
+ul ul li:hover img
+{
   margin: 5px;
 }
 
-.hover-effect:hover {
+.hover-effect:hover
+{
   opacity: 50%;
   border-radius: 3px;
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
-
-h3 img:first-child {
+h3 img:first-child
+{
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
-
-.titre1 {
-  font-size: 75px;
-  width: 100%;
+.titre1
+{
+  margin-left:10%;
+  font-size: 180%;
+  width: 80%;
 }
-
 /*test animation fondu provenance openclassroom div en fondu*/ 
-#entete_logo {
+#entete_logo
+{
     height:0;
     width: 100px;
     -webkit-animation: anim 1s linear forwards 2s;
     animation: anim 1s linear forwards 2s;
 }
-@-webkit-keyframes anim {
+@-webkit-keyframes anim
+{
     0%  {height: 0;}
     100% {height: 100px}
 }
-@keyframes anim {
+@keyframes anim
+{
     0%  {height: 0;}
     100% {height: 100px}
 }
 /*test animation fondu provenance openclassroom div en fondu*/ 
-
-section h2 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
- center;
-  font-size: 175px;
+section h2
+{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif, center;
+  font-size: 400%;
+  color:rgb(82, 82, 76);
+  text-shadow: 1px 1px 2px rgb(238, 230, 230), 0 0 1em rgb(0, 0, 5), 0 0 0.2em rgb(163, 163, 172);
+  text-align: center;
+  text-decoration: underline;
+  -webkit-transition: color white 0.2s ease;
+  margin-bottom: 25px;
 }
-
-p {
+h3
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 90px;
+  text-shadow: 1px 1px 2px rgb(238, 230, 230), 0 0 1em rgb(0, 0, 5), 0 0 0.2em rgb(163, 163, 172);
+  justify-content: center;
+  color: rgb(121, 115, 124);
+}
+p
+{
+  margin: auto;
   color: aliceblue;
+  justify-content: center;
+  width: 80%;
+  text-align: justify;
 }
-
-ul {
-  /*text-align: center ; /* pose le menu au centre de la page*/
+ul
+{
   width: auto;
   font-size: 75px;
 }
+li
+{
+  font-family: "lobster";
+  display: -ms-grid;
+  display: grid;
+  padding:0% 0% 3% 0%;
+}
+.non
+{
+  width: 50%;
+  margin: 1% 25%
+}
 
 /*-------------------------------------------------------------------------*/
-input {
-  margin-left: 25px;
-  width: 95%;
+input
+{
+  margin:auto;
+  width: 50%;
   height: auto;
   text-align: center;
   font-size: 35px;
 }
-
-textarea {
-  margin-left: 25px;
-  width: 95%;
-  height: auto;
+textarea
+{
+  margin:auto;
+  width: 50%;
+  height: 200px;
   text-align: center;
   font-size: 45%;
-  -webkit-box-shadow: #ccc;
-          box-shadow: #ccc;
 }
-
-button {
-  margin-left: 25px;
-  width: 95%;
+button
+{
+  margin: auto;
+  width: 50%;
   height: auto;
   color: #f7f1e9;
   font-size: 45%;
   background-color: blue;
 }
-/*# sourceMappingURL=style.css.map */
-footer div{
+footer div
+{
   display:inline-flex;
-  padding-top: 5%;
+  padding-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
-  }
-#icon_net
-{
-  display:;
 }
+footer ul
+{
+  text-align: center;
+  align-items: ;
+  margin-top: 50px;
+}
+/*test animation fondu provenance openclassroom div en fondu*/ 
 .icon_footer 
 {
-
-    height: 0px;
-    width: 100px;
-    -webkit-animation: anim 1s forwards 2s;
-    animation: anim 2s forwards 3s;
+  margin: 0% 0% 0% 0%;
+  height: 0%;
+  width: 100px;
+  -webkit-animation: anim 1s forwards 2s;
+  animation: anim 2s forwards 3s;
 }
-@-webkit-keyframes anim {
-    0%  {height: 0;}
-    100% {height: 100px}
+@-webkit-keyframes anim
+{
+  0%  {height: 0;}
+  100% {height: 100px}
 }
-@keyframes anim {
-    0%  {height: 0;}
-    100% {height: 100px}
+@keyframes anim
+{
+  0%  {height: 0;}
+  100% {height: 100px}
 }
+/*test animation fondu provenance openclassroom div en fondu*/ 
